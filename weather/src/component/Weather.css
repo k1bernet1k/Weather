@@ -1,0 +1,11 @@
+.time {
+
+    min-height: 250px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
