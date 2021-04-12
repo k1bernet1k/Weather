@@ -27,7 +27,7 @@ export default class Weather extends Component{
                 <p>Температура {this.props.temp2}</p>
                 <p>Скорость ветра {this.props.wind2}</p>
                 <p>Облачность: {rus[this.props.cloud2]}</p>
-                <p>Влажность: {this.props.humidity}2</p>
+                <p>Влажность: {this.props.humidity2}</p>
             </div>
             <div>
                 <h3>Через 12 часов</h3>

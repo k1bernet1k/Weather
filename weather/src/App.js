@@ -7,10 +7,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      weather: null,
-      weathet2: null,
-      weather3: null,
-      weather4: null
+      weather: null
+
     }
   }
   componentDidMount() {
@@ -53,10 +51,10 @@ class App extends Component {
       relative_humidity:"",
       wind_speed: ""
     }];
-    let cloud2 = this.state.weather2 ? this.state.weather[5].data.next_1_hours.summary : [{
+    let cloud2 = this.state.weather ? this.state.weather[5].data.next_1_hours.summary : [{
       symbol_code: ""
     }];
-    let weather3 = this.state.weather3 ? this.state.weather[11].data.instant.details : [{
+    let weather3 = this.state.weather ? this.state.weather[11].data.instant.details : [{
       air_temperature: "",
       relative_humidity:"",
       wind_speed: ""
@@ -64,12 +62,12 @@ class App extends Component {
     let cloud3 = this.state.weather ? this.state.weather[11].data.next_1_hours.summary : [{
       symbol_code: ""
     }];
-    let weather4 = this.state.weather4 ? this.state.weather[23].data.instant.details : [{
+    let weather4 = this.state.weather ? this.state.weather[23].data.instant.details : [{
       air_temperature: "",
       relative_humidity:"",
       wind_speed: ""
     }];
-    let cloud4 = this.state.weather4 ? this.state.weather[23].data.next_1_hours.summary : [{
+    let cloud4 = this.state.weather ? this.state.weather[23].data.next_1_hours.summary : [{
       symbol_code: ""
     }];
     // console.log(weather)
@@ -83,7 +81,7 @@ class App extends Component {
               temp2={weather2.air_temperature}
               wind2={weather2.wind_speed}
               cloud2={cloud2.symbol_code}
-              humidit2={weather2.relative_humidity}
+              humidity2={weather2.relative_humidity}
               temp3={weather3.air_temperature}
               wind3={weather3.wind_speed}
               cloud3={cloud3.symbol_code}
